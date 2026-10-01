@@ -1,2 +1,52 @@
 create-orange-background
 <orange-backdrop>
+body {
+margin: 0;
+background: linear-gradient(135deg, #FFDAB9, #000000);
+}
+
+/* Title area */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 50px;
+}
+
+/* Bakery title */
+h1 {
+color: brown;
+font-family: cursive;
+font-size: 45px;
+}
+
+/* Navigation */
+nav {
+display: flex;
+gap: 30px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-size: 18px;
+}
+
+
+
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+nav {
+display: flex;
+gap: 30px;
+}
+
+
+header {
+display: flex;
