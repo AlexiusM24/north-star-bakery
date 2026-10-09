@@ -1,12 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
 const themeButton = document.getElementById("theme-toggle");
 
-themeButton.addEventListener("click", function () {
+if (!themeButton) return;
+
+themeButton.addEventListener("click", () => {
 document.body.classList.toggle("dark-mode");
 
-if (document.body.classList.contains("dark-mode")) {
-themeButton.textContent = "☀️ Switch to Light Mode";
-} else {
-themeButton.textContent = "🌙 Toggle Dark Mode";
-}
-});
+const darkMode = document.body.classList.contains("dark-mode");
 
+themeButton.textContent = darkMode
+? "☀️ Switch to Light Mode"
+: "🌙 Toggle Dark Mode";
+});
+});
