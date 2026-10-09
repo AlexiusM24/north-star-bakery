@@ -1,4 +1,23 @@
+document.addEventListener("DOMContentLoaded", () => {
+// Highlight the current page in the navigation
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
+document.querySelectorAll("nav a").forEach(link => {
+const linkPage = link.getAttribute("href");
+
+if (linkPage === currentPage) {
+link.classList.add("active-page");
+link.setAttribute("aria-current", "page");
+}
+});
+
+// Fade in the page content
+const mainContent = document.querySelector("main");
+
+if (mainContent) {
+mainContent.classList.add("page-loaded");
+}
+});
 document.addEventListener("DOMContentLoaded", () => {
 // Interactive bakery navigation
 const nav = document.querySelector("nav");
