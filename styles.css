@@ -190,5 +190,61 @@ transition: transform 0.2s ease;
 #theme-toggle:hover {
 transform: scale(1.05);
 }
+.button-area {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 12px;
+margin: 24px auto;
+}
+
+.site-button {
+display: inline-block;
+box-sizing: border-box;
+padding: 12px 20px;
+background-color: #ffffff;
+color: #8b4513;
+border: 2px solid #8b4513;
+border-radius: 8px;
+font: inherit;
+text-decoration: none;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.site-button:hover {
+background-color: #8b4513;
+color: #ffffff;
+transform: translateY(-2px);
+}
+
+body {
+transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+background-color: #1c1c1c;
+color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+background-color: #000000;
+color: #ffffff;
+}
+
+body.dark-mode article,
+body.dark-mode section {
+background-color: #333333;
+color: #ffffff;
+}
+
+body.dark-mode .site-button {
+background-color: #333333;
+color: #ffffff;
+border-color: #ffffff;
+}
+
 
 
