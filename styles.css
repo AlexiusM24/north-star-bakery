@@ -1,3 +1,48 @@
+/* About page */
+.about-section {
+max-width: 850px;
+margin: 50px auto;
+padding: 35px;
+background-color: #ffe0b2;
+color: #302019;
+border-radius: 12px;
+line-height: 1.8;
+}
+
+.about-section h2 {
+color: #8b4513;
+font-family: cursive;
+margin-bottom: 15px;
+}
+
+.about-section p {
+margin-bottom: 20px;
+}
+
+.back-home {
+display: inline-block;
+background-color: #302019;
+color: #ffe0b2;
+padding: 12px 22px;
+text-decoration: none;
+border-radius: 6px;
+transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+background-color: #8b4513;
+}
+
+nav a {
+margin: 0 10px;
+color: inherit;
+text-decoration: none;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
 
 body {
 margin: 0;
