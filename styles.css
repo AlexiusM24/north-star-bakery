@@ -91,3 +91,20 @@ gap: 30px;
 
 header {
 display: flex;
+article {
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+article:hover {
+transform: translateY(-4px);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+article.selected {
+outline: 3px solid #8b4513;
+transform: scale(1.02);
+}
+
+button.clicked {
+transform: scale(0.96);
+}
